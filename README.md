@@ -15,6 +15,7 @@ The data consists of:
 After reading in the data, we then merge all the data into a single dataset. We merge the training and test versions of X, y and subject together first, since this makes it more convenient when it comes to applying names.
 
 The activity label data y is converted from numbers 1-6 to factors, and given more descriptive labels:
+
 		1 : WALKING
 
 		2 : WALKING_UPSTAIRS

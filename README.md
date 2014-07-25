@@ -5,10 +5,11 @@ The run_analysis code first reads in the datasets from the working directory. Th
 	https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 The data consists of:
-	- X_train, a training set of accelerometer measurements
-	- y_train, a training set of activities corresponding to each set of measurements, represented as numbers
-	- subject_train, a training set indicating which subjects were making the movements recorded.
-	- test versions of each of these datasets -- making six files to be read in, in total.
+
+	X_train, a training set of accelerometer measurements
+	y_train, a training set of activities corresponding to each set of measurements, represented as numbers
+	subject_train, a training set indicating which subjects were making the movements recorded.
+	test versions of each of these datasets -- making six files to be read in, in total.
 
 (Note that there is also "Inertial Signals" data available from that source, but I didn't use it since FAQs on the course website said we didn't need to).
 
@@ -35,7 +36,7 @@ The accelerometer measurement variables in X are given names, which are read in 
 
 Having merged and named these three datasets, we merge them them together into a single dataset using cbind.
 
-Then we calculate the mean and sb of each variable (that is, each column in the dataset). Note that we don't calculate mean or sb for the subject IDs or activity labels, since that'd be meaningless.
+Then we calculate the mean and sb of each variable (that is, each column in the dataset). Note that we don't calculate mean or sd for the subject IDs or activity labels, since that'd be meaningless.
 
 Having extracted the mean and sd data, we move on to creating a second, tidy dataset with average (mean) of each variable for each activity and each subject. We use the aggregate() function to find the mean of every variable, then the melt() function from the reshape2 package to arrange it tidily.
 

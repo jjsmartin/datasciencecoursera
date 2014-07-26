@@ -1,7 +1,7 @@
 Getting and Cleaning Data - Class Project
 ==========================================
 
-The run_analysis code first reads in the datasets from the working directory. These were originally were downloaded from: 
+The run_analysis code first reads in the datasets from the working directory. These were originally downloaded from: 
 	https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 The data consists of:
